@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Incluye las bibliotecas mencionadas anteriormente -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <title>Alma Cielo</title>
+</head>
+<body>
+  <header>
+    <h1>Alma Cielo</h1>
+  </header>
+  <main>
+    <div class="producto">
+      <div class="carousel">
+        <img src="producto1_1.jpg" alt="Producto 1 - Imagen 1">
+        <img src="producto1_2.jpg" alt="Producto 1 - Imagen 2">
+      </div>
+      <h2>Producto 1</h2>
+      <p>Descripción del Producto 1.</p>
+      <p>Precio: $50.00</p>
+    </div>
+    <div class="producto">
+      <div class="carousel">
+        <img src="producto2_1.jpg" alt="Producto 2 - Imagen 1">
+        <img src="producto2_2.jpg" alt="Producto 2 - Imagen 2">
+      </div>
+      <h2>Producto 2</h2>
+      <p>Descripción del Producto 2.</p>
+      <p>Precio: $30.00</p>
+    </div>
+    <!-- Agrega más productos aquí -->
+  </main>
+  <footer>
+    <p>&copy; 2023 Tu Alma Cielo</p>
+  </footer>
+  <script>
+    // Inicializa el carrusel de imágenes
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: false, // Muestra los puntos de navegación
+        arrows: false, // Muestra las flechas de navegación
+        slidesToShow: 1, // Muestra una imagen a la vez
+        autoplay: true, // Inicia la reproducción automática
+        autoplaySpeed: 3000 // Intervalo de tiempo entre las imágenes (en milisegundos)
+      });
+    });
+  </script>
+</body>
+</html>
